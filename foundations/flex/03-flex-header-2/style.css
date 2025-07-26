@@ -9,9 +9,38 @@ body {
 }
 
 .header {
+  padding: 10px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  /*align-items: center;  I have a problem with doing this.*/
+  justify-content: space-between;
+}
+
+.logo-links-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  /*align-items: center;  I have a problem with doing this.*/
+  /* The parent has already center aligned them */
+  flex: auto; /* This is the default, but added it to show it is what I want */
+  gap: 12px;
+}
+
+.notification-profile-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
 }
 
 .profile-image {
@@ -27,6 +56,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  flex: auto; /* This is the default, but added it to show it is what I want */
+  /*margin: 10px;*/
 }
 
 button {
