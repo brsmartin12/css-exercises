@@ -20,7 +20,9 @@ body {
 
 .logo-links-box {
   display: flex;
-  justify-content: flex-start;
+  /*justify-content: flex-start;
+  Justify content was not needed. 
+  Box will only be as wide as its content*/
   align-items: center;
   gap: 12px;
 }
@@ -29,7 +31,8 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around; Justify content was not needed. 
+  This box will only be as wide as its content.*/
   /*align-items: center;  I have a problem with doing this.*/
   /* The parent has already center aligned them */
   flex: auto; /* This is the default, but added it to show it is what I want */
@@ -38,7 +41,9 @@ body {
 
 .notification-profile-box {
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;
+  Once again justify content was not needed. 
+  Box will only be as wide as its content*/
   align-items: center;
   gap: 12px;
 }
